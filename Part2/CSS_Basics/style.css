@@ -1,0 +1,36 @@
+img {
+  height: 150px;
+  width: 360px;
+  position: center;
+  display: block;
+  margin: 80px auto 20px;
+}
+
+#search {
+  border: none;
+  box-sizing: border-box;
+  height: 30px;
+  width: 400px;
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 5px 1px #D8D8D8
+}
+
+button {
+  border: none;
+  box-sizing: border-box;
+  height: 30px;
+  width: 110px;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #F5F1F1;
+  font-weight: bold;
+  font-size: 10px;
+  color: gray
+}
+
+#google{
+  margin-left: 500px
+}
