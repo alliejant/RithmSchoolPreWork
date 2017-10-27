@@ -1,0 +1,23 @@
+body {
+  background-color: #000000;
+}
+
+div {
+  background-color: #52ABEE;
+  margin: 0px 20%;
+  padding: 2%;
+  padding-bottom: 1000px;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+}
+
+li:first-letter {
+  font-size: 200%;
+}

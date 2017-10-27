@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(81, 132, 167);
+  overflow: auto;
+}
+
+#nav {
+  float: left;
+  background-color: lightblue;
+  padding: 1%;
+  width: 20%;
+  height: 500px;
+  margin: 0% 0% 0% 5%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#content {
+  float: right;
+  background-color: lightskyblue;
+  padding: 1%;
+  width: 70%;
+  height: 500px;
+  margin: 0% 5% 0% 0%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+footer {
+  float: right;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
+  height: 10px;
+  width: 70%;
+  margin-bottom: 5em;
+}
