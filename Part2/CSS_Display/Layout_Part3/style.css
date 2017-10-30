@@ -1,0 +1,30 @@
+.purple, .red, .green, .orange {
+	box-sizing: border-box;
+	border: 5px solid black;
+}
+
+.red, .green, .orange {
+	width: 200px;
+	height: 500px;
+    margin: 0px 5px 20px;
+    display: inline-block;
+}
+
+.purple {
+	width: 620px;
+	height: 100px;
+	margin: 10px;
+	background-color: purple;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.orange {
+	background-color: orange;
+}

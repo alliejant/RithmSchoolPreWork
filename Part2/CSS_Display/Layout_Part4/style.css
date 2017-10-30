@@ -1,0 +1,36 @@
+.green, .pic, .orange, .red, .blue {
+	box-sizing: border-box;
+	border: 5px solid black;
+}
+
+.pic, .orange, .red, .blue {
+	width: 250px;
+	height: 150px;
+    margin: 10px 5px 10px;
+    display: inline-block;
+}
+
+.green {
+	width: 770px;
+	height: 100px;
+	margin: 10px, 5px, 0px;
+	background-color: green;
+}
+
+.pic {
+	background-image: url('http://superawesomevectors.com/wp-content/uploads/2016/08/free-vector-tree-illustration-800x566.jpg');
+	background-size: 200px 150px;
+	background-position: center;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}

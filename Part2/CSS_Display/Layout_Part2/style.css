@@ -1,0 +1,37 @@
+.red, .blue, .yellow {
+	border: 1px solid black;
+	margin: 50px;
+	box-sizing: content-box;
+}
+
+.red {
+	background-color: red;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	float: left;	
+}
+
+
+.blue {
+	background-color: blue;
+	height: 100px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column wrap;	
+	align-items: flex-end;
+	float: right;
+}
+
+.yellow {
+	background-color: yellow;
+	height: 100px;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
