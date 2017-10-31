@@ -1,0 +1,90 @@
+#circle {
+	border: 5px solid black;
+	border-radius: 50%;
+	height: 600px;
+	width: 600px;
+    position: absolute;
+}
+
+#midcircle {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+    position: absolute;
+    top: 250px;
+    right: 250px;
+    z-index: 3;
+    background-image: url(https://i.pinimg.com/originals/24/c4/f2/24c4f2d417f4ff178af7c9a03ef623e5.jpg);
+    background-position: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+}
+
+#hour {
+	height: 200px;
+	width: 6px;
+	background-color: magenta;
+	position: absolute;
+	top: 100px;
+	right: 300px;
+	z-index: 1;
+	animation: tick 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+@keyframes tick {
+	0% {
+		transfrom: translate(0px, 0px);
+	}
+
+	25% {
+		transform: rotate(90deg) translate(100px, -100px);
+	}
+	
+	50% {
+		transform: rotate(180deg) translate(0px, -200px);
+	}
+	75% {
+		transform: rotate(270deg) translate(-100px, -100px);
+ 	}
+
+ 	100% {
+ 		transform: rotate(360deg) translate(0px, 0px);
+ 	}
+ }
+
+
+#minute {
+	height: 300px;
+	width: 3px;
+	background-color: magenta;
+	position: absolute;
+	top: 0px;
+	right: 300px;
+	z-index: 2;
+	animation: ticking 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 60;
+}
+
+@keyframes ticking {
+	0% {
+		transform: translate(0px, 0px);
+	}
+
+	25% {
+		transform: rotate(90deg) translate(150px, -150px);
+	}
+	
+	50% {
+		transform: rotate(180deg) translate(0px, -300px);
+	}
+	75% {
+		transform: rotate(270deg) translate(-150px, -150px);
+ 	}
+
+ 	100% {
+ 		transform: rotate(360deg) translate(0px, 0px);
+ 	}
+ }

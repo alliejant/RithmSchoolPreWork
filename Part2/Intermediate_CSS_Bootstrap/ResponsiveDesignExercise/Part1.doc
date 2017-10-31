@@ -1,0 +1,4 @@
+1. An em is the length of the letter “m”
+2. An em is the length of the letter “m” of the parent element, and an rem is the length of the letter “m” of the root (html) element so it’s uniform throughout all your css
+3. Mobile first design is creating a design approach for mobile phones first, since so many people view things on phones now a days, and then you can add features on for the screen size as it expands
+4. BEM stands for “Block Element Modifier” and it’s a way of organizing your CSS code to make it look cleaner

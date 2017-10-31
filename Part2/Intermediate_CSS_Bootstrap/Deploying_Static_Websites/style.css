@@ -1,0 +1,57 @@
+body {
+	background-image: url("https://i.ytimg.com/vi/bEPAbS-SRlg/maxresdefault.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+img {
+	height: 30vh;
+	width: 30vh;
+	border: 5px dashed black;
+	border-radius: 50px;
+	margin: 5vh;
+}
+
+img:hover {
+	transform: translate(0.5vh, 0.5vh);
+}
+
+.visual {
+	float: left;
+}
+
+.wrapper {
+	height: 40vh;
+	width: 40vh;
+	border: 10px solid black;
+	border-radius: 50px;
+	margin: 100px, 50px;
+}
+
+.color {
+	background-color: green;
+}
+
+button {
+	margin-top: 1vh;
+	margin-left: 30vh;
+	height: 5vh;
+	width: 12vh;
+}
+
+.wrapper.info {
+	height: 60vh;
+}
+
+.info {
+	width: 60%;
+	display: inline-block;
+	background-color: white;
+	float: right;
+	padding: 30px;
+	line-height: 75%;
+}
+
+p {
+	margin-bottom: 5px;
+}
