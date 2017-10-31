@@ -1,0 +1,18 @@
+Debugging Exercises:
+	Part0:
+	1. the throw keyword can throw an error
+	2. the finally keyword runs the code you put in between the brackets regardless if there was an error found
+	3. A typeError is when you are doing something you cannot do for that type of variable and a referenceError means the variable hasn’t been defined or doesn’t exist.
+	4. You go to Sources and click + Snippet
+	5. It’s what you have chosen to pause on
+	6. try { code} catch(err) {code}
+	Part1: 
+	1. ReferenceError because person is not defined
+	2. TypeError because the method has not been defined, so it cannot be used on data
+	3. TypeError because a property cannot be set on something that is undefined
+	4. ReferenceError because thing has not been defined.
+	Part2: 
+	1. the greater should be less than
+	2. the = should be ===
+	3. the commas should be semi-colons
+	4. should be i < numbers.length, i++ doesn’t need semi-colon, numbers should be numbers[i], = should be ===, no semi-colon is needed after if parenthesis, should push numbers[i] not i, return evenNumbers should come after the for loop
