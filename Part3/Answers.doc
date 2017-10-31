@@ -1,0 +1,90 @@
+Boolean Logic Exercises:
+	Part1:
+		1. true;
+		2. true;
+		3. 1;
+		4. true;
+		5. false;
+		6. true;
+		7. true;
+	Part2:
+		1.”Keep it up!”
+		2. The if blocks will run in the statement in the parenthesis evaluates to true. There’s no need to create another boolean expression if it is already one. 
+		1. “Third”, because the first two values are considered falsey values
+		2. undefined
+		3. No, because undefined is a falsey value
+		4. No, it is also a falsey value
+		5. Yes, because it has characters in the str and does not evaluate to falsey values
+	Part3:
+		1. if(MathRandom < 0.5) console.log(“Over 0.5”)
+else console.log(“Under 0.5”)
+		2. A falsey value evaluates to false. They are null, undefined, 0, “”, false, NaN
+Array Exercises:
+	1. for(var i = 0; i < people.length; i++){
+console.log(people[i])}
+	2. people.shift();
+	3. people.pop();
+	4. people.unshift(“Matt”);
+	5. people.push(“Allie”);
+	6. for(var i = 0; i < people.length; i++){
+console.log(people[i])
+if(people[i] === “Mary”) break;}
+	7. people.slice();
+	8. people.indexOf(“Mary”);
+	9. people.indexOf(“Foo”);
+	10. people.splice(2, 1, “Elizabeth”, “Artie”);
+	11. let withBob = people.concat(“Bob”);
+Object Exercises:
+	1. programming.languages.push(“Go”);
+	2. programming.difficulty = 2;
+	3. delete programming.jokes;
+	4. programming.isFun = true;
+	5. for(var i = 0; i < programming.languages.length; i++){ console.log(programming.languages[i]);}
+	6.for(const key in programming){
+console.log(key);}
+	7.for(const key in programming){
+console.log(programming[key]);}
+Functions Exercises:
+	Part1:
+		1. function difference(num1, num2){ return num1 - num2; }
+		2. function product(num1, num2){ return num1 * num2; }
+		3. function printDay(num) {const dayObj={1:”Sunday”, 2:”Monday”, 3:”Tuesday”, 4:”Wednesday”, 5:”Thursday”, 6:”Friday”, 7:”Saturday”} return obj[num];
+		4. function lastElement(arr){let newArr = arr.slice(); return newArr.pop();}
+		5. function numberCompare(num1, num2){if(num1 > num2) return “First is greater” else if (num1 === num2) return “Numbers are equal” else return “Second is greater”}
+		6. function singleLetterCount(str, letter){ let counter = 0; for(let i = 0; i < str.length; i++){ if(str[i] === letter) counter++ } return counter;}
+	Part2:
+		1. function multipleLetterCount(str){ for(let i = 0; i < str.length; i++){ if(obj[i]) obj[i]++; else obj[i] = 1; return obj;}
+		2. function arrayManipulation(arr, comm, where, val){
+if(comm === “remove” && where === “end”) return arr.pop();
+if(comm === “remove” && where === “beginning”) return arr.shift();
+if(comm === “add” && where === “beginning”) return arr.unshift(val);
+if(comm === “add” && where === “end”) return arr.push(val);}
+		3. function isPalindrome(str){ for(var i = 0; i <= str.length/2; i++){
+if(str[i] !== str[str.length - 1 - i]) return false;} return true; }
+	Part 3:
+	function rockPaperScissors(){
+  let randNum = Math.random();
+  let compAns;
+  
+  if(randNum < .33) compAns = "rock";
+  else if (randNum < .66) compAns = "paper";
+  else compAns = "scissors";
+  
+  let userAns = prompt("Rock, paper, or Scissors?").toLowerCase();
+  
+  if(userAns === compAns) return "You tie"
+  else if (userAns === "rock") {
+    if(compAns === "paper") return "Comp wins"
+    if(compAns === "scissors") return "You win"
+  } else if (userAns === "paper") {
+    if(compAns === "rock") return "You wins"
+    if(compAns === "scissors") return "Comp win"
+  }  else if (userAns === "scissors") {
+    if(compAns === "rock") return "Comp wins"
+    if(compAns === "paper") return "You win"
+  } else return "There was a mistake somewhere, try again";
+}
+
+		
+
+
