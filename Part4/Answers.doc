@@ -16,3 +16,101 @@ Debugging Exercises:
 	2. the = should be ===
 	3. the commas should be semi-colons
 	4. should be i < numbers.length, i++ doesn’t need semi-colon, numbers should be numbers[i], = should be ===, no semi-colon is needed after if parenthesis, should push numbers[i] not i, return evenNumbers should come after the for loop
+Nested Arrays:
+	1. function rotate(arr, num){
+    let numToR = num % arr.length;
+    let newArr = arr.slice();
+    for(let i = 0; i < numToR; i++){
+        let curr = newArr.pop();
+        newArr.unshift(curr);
+    }
+    return newArr;
+}
+	2. function makeXOGrid(subArr, len){
+    let x = true;
+    let finArr = [];
+    for(let i = 0; i < subArr; i++){
+        let newArr = [];
+        for(let j = 0; j < len; j++){
+            if(x) newArr.push("X");
+            else newArr.push("O");
+            x = !x;
+        }
+        finArr.push(newArr);
+    }
+    return finArr;
+}
+HigherOrderFunctions, Timers, and Closures:
+	1.function countdown(num){
+    let timer = setInterval(function(){
+        if(num === 0){
+            setTimeout(function(){
+                clearTimeout(timer);
+            }, 0);
+        }
+        if(num) console.log(num);
+        else console.log("Done!");
+        num--;
+    }, 1000);
+}
+
+	2.function randomGame(){
+    let counter = 0;
+    let timer = setInterval(function(){
+        let rand = Math.random();
+        counter++;
+        console.log(rand + " " + counter);
+        if(rand > .75){
+            setTimeout(function(){
+                clearTimeout(timer);
+            }, 0);
+        }
+    }, 1000);
+}
+
+	3.function isEven(num){
+    return !!num%2;
+}
+
+	4.function isOdd(num){
+    return !num%2;
+}
+
+	5. function isPrime(num){
+    for(var i = 2; i <= num/2; i++){
+        if(num%i === 0) return false;
+    }
+    return true;
+}
+
+	6.function numberFact(num, cb){
+    return cb(num);
+}
+
+	7.function find(arr, cb){
+    for(let i = 0; i < arr.length; i++){
+        if( cb(arr[i]) ) return arr[i];
+    }
+}
+
+	8.function findIndex(arr,cb){
+    for(let i = 0; i < arr.length; i++){
+        if( cb(arr[i]) ) return i;
+    }
+}
+
+	9.function specialMultiply(num1, num2){
+    if(num2 !== undefined) return num1 * num2;
+    else {
+        return function(num2){
+            return num1 * num2;
+        }
+    }
+}
+DOM Exercises:
+	1.getElementById(“container”);
+	2.querySelector(“#container”);
+	3.getElementsByClass(“second:);
+	4.querySelector(“ol.third”);
+	5.querySelector(“div.
+
