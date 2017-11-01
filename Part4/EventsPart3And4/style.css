@@ -1,0 +1,35 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 2vh;
+}
+
+#add, #complete, #remove {
+	width: 30vw;
+	padding: 1vh;
+	font-size: larger;
+}
+
+#add {
+	background-color: yellow;
+}
+
+#complete {
+	background-color: green;
+}
+
+#remove {
+	background-color: red;
+}
+
+h4 {
+	padding: 8vh 45vw 2vh;
+}
+
+
