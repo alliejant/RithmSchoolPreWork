@@ -108,9 +108,30 @@ HigherOrderFunctions, Timers, and Closures:
     }
 }
 DOM Exercises:
-	1.getElementById(“container”);
-	2.querySelector(“#container”);
-	3.getElementsByClass(“second:);
-	4.querySelector(“ol.third”);
-	5.querySelector(“div.
+	1.document.getElementById(“container”);
+	2.document.querySelector(“#container”);
+	3.document.getElementsByClassName(“second:);
+	4.document.querySelector(“ol .third”);
+	5.document.querySelector(“#container”).innerHTML = “Hello!”;
+	6.document.querySelector(“.footer”).classListAdd(“main”);
+	7.document.querySelector(“.footer”).classListRemove(“main”)
+	8.let four = document.createElement(“li”);
+	9.four.innerText = “four”;
+	10.document.querySelector(“ul”).appendChild(four);
+	11. let olItems = document.querySelectorAll(“ol li”);
+for(let i = 0; i < olItems.length; i++){
+	olItems[i].style.backgroundColor = “green”;
+}
+	12. let divToRemove = document.querySelector(“div#footer”);
+divToRemove.parentElement.removeChild(divToRemove);
 
+Events Exercises:
+	Part1:
+		1. document.addEventListener(“DOMContentLoaded”, function(){};
+		2. document.getElementById(“change_heading”).innerText = “Hello World!”;
+		3. document.querySelectorAll(“section”).addEventListener(“mouseover”, function(event){ event.target.innerText = event.target.getAttribute(“class”)});
+		4.let newElem = document.createElement(“div”);
+		5. newElem.setAttribute(“class”, “purple”); 
+newElem.style.backgroundColor = “purple”;
+		6. document.querySelector(“section”).appendChild(newElem);
+		
