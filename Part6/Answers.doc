@@ -33,3 +33,22 @@ Part1:
 6.function findByUsername(arr, str){
   return arr.find( (e) => e.username === str);
 }
+
+Part 2:
+1.function vowelCount(str){
+  let finObj = {};
+  let lower = str.toLowerCase();
+  for(let i = 0; i < lower.length; i++){
+    let letter = lower[i];
+    if(letter === "a") finObj[letter] ? finObj[letter]++ : finObj[letter] = 1;
+    if(letter === "e") finObj[letter] ? finObj[letter]++ : finObj[letter] = 1;
+    if(letter === "i") finObj[letter] ? finObj[letter]++ : finObj[letter] = 1;
+    if(letter === "o") finObj[letter] ? finObj[letter]++ : finObj[letter] = 1;
+    if(letter === "u") finObj[letter] ? finObj[letter]++ : finObj[letter] = 1;
+  }
+  return finObj;
+}
+
+2.function removeVowels(str){
+  return str.replace(/[aeiou]/gi, "");
+}
