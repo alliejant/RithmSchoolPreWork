@@ -1,0 +1,35 @@
+Part1:
+
+1.function printEmails(arr){
+  arr.forEach( (e) => console.log(e.email));
+}
+
+2.function printHobbies(arr){
+  arr.forEach( (e) => {
+   for(let i = 0; i < e.hobbies.length; i++){
+     console.log(e.hobbies[i]);
+   } 
+  });
+}
+
+3.function findHometownByState(arr, str){
+  return arr.find( (e) => e.hometown.state === str);
+}
+
+4.function allLanguages(arr){
+  let finArr = [];
+  arr.forEach( (e) => {
+    e.favoriteLanguages.forEach( (lang) => {
+      if(finArr.indexOf(lang) === -1) finArr.push(lang);
+    })
+  })
+  return finArr;
+}
+
+5.function hasFavoriteEditor(arr, str){
+  return arr.some( (e) => e.favoriteEditor === str);
+}
+
+6.function findByUsername(arr, str){
+  return arr.find( (e) => e.username === str);
+}
